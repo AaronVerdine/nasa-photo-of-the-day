@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PhotoCard(props) {
+function SpacePics(props) {
     console.log(props);
     return (
         <div>
@@ -13,4 +13,4 @@ function PhotoCard(props) {
     )
 }
 
-export default PhotoCard;
+export default SpacePics;
