@@ -6,6 +6,7 @@ import "./App.css";
 function App() {
   const [data, setData] = useState({});
   useEffect(() => {
+    console.log('first render')
     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     .then(res => {
       console.log(res.data);
