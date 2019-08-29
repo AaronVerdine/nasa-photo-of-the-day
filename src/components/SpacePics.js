@@ -1,9 +1,10 @@
 import React from 'react';
+import './SpacePics.scss'
 
 function SpacePics(props) {
     console.log(props);
     return (
-        <div>
+        <div className="space-pics">
             <h2>{props.title}</h2>
             <img src={props.url} />
             <div>{props.date}</div>
@@ -14,4 +15,4 @@ function SpacePics(props) {
     )
 }
 
-export default SpacePics;
+export default SpacePics; 

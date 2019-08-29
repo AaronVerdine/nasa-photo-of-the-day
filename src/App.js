@@ -25,6 +25,7 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
       </p>
+      <div className="space-pics">
       {  data 
                   ? <SpacePics title={data.title}
                                           url={data.url}
@@ -32,6 +33,7 @@ function App() {
                                           date={data.date} />
                             : <h3>Image Loading...</h3> 
                             } 
+        </div>
       </div>
   );
 }
