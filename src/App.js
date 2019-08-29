@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import SpacePics from "./components/SpacePics";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   const [data, setData] = useState(null);
