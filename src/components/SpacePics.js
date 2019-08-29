@@ -6,6 +6,7 @@ function SpacePics(props) {
         <div>
             <h2>{props.title}</h2>
             <img src={props.url} />
+            <div>{props.date}</div>
             <p>
                 {props.explanation}
             </p>

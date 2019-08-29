@@ -28,7 +28,8 @@ function App() {
       {  data 
                   ? <SpacePics title={data.title}
                                           url={data.url}
-                                          explanation={data.explanation} />
+                                          explanation={data.explanation} 
+                                          date={data.date} />
                             : <h3>Image Loading...</h3> 
                             } 
       </div>
