@@ -1,17 +1,18 @@
 import React from 'react';
-import './SpacePics.scss'
+import './SpacePics.scss';
+import { Card } from 'semantic-ui-react';
 
 function SpacePics(props) {
     console.log(props);
     return (
-        <div className="space-pics">
+        <Card className="space-pics">
             <h2>{props.title}</h2>
             <img src={props.url} />
             <div>{props.date}</div>
             <p>
                 {props.explanation}
             </p>
-        </div>
+        </Card>
     )
 }
 
