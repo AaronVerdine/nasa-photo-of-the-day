@@ -3,6 +3,7 @@ import axios from "axios";
 import SpacePics from "./components/SpacePics";
 import "./App.scss";
 
+
 function App() {
   const [data, setData] = useState(null);
   useEffect(() => {
@@ -31,8 +32,9 @@ function App() {
                                           url={data.url}
                                           explanation={data.explanation} 
                                           date={data.date} />
-                            : <h3>Image Loading...</h3> 
+                            :  <h3>Image Loading...</h3>
                             } 
+                            
         </div>
       </div>
   );
