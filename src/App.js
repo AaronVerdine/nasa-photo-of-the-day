@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import SpacePics from "./components/SpacePics";
+import ToggleButton from './components/ToggleButton';
 import "./App.scss";
 
 
@@ -22,10 +23,10 @@ function App() {
    
   return (
     <div className="App">
-      <p>
+      {/* <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
-      </p>
+      </p> */}
       <div className="space-pics">
       {  data 
                   ? <SpacePics title={data.title}
@@ -36,6 +37,7 @@ function App() {
                             } 
                             
         </div>
+        <ToggleButton />
       </div>
   );
 }
